@@ -1,0 +1,68 @@
+{
+  "name": "@tawanjs/soon",
+  "version": "0.1.0",
+  "description": "SOON - Streamable Object Notation. A streaming-friendly, LLM-optimized serialization format",
+  "keywords": [
+    "soon",
+    "serialization",
+    "parser",
+    "notation",
+    "llm",
+    "token-efficient",
+    "streaming",
+    "configuration",
+    "json-alternative"
+  ],
+  "author": "tawanjs",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./stream": {
+      "require": "./dist/stream.js",
+      "import": "./dist/stream.mjs",
+      "types": "./dist/stream.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src --ext .ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0",
+    "yaml": "^2.3.0",
+    "smol-toml": "^1.1.0",
+    "tinybench": "^2.6.0",
+    "cli-table3": "^0.6.3",
+    "chalk": "^5.3.0",
+    "gpt-tokenizer": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
