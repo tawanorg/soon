@@ -12,6 +12,12 @@ A modern, token-efficient serialization format optimized for LLM applications, s
 
 ## Installation
 
+**From GitHub Packages:**
+```bash
+npm install @tawanorg/soon
+```
+
+**From npm:**
 ```bash
 npm install @tawanjs/soon
 ```
@@ -19,7 +25,7 @@ npm install @tawanjs/soon
 ## Quick Start
 
 ```typescript
-import { parse, stringify } from '@tawanjs/soon';
+import { parse, stringify } from '@tawanorg/soon';
 
 // Parse SOON to JavaScript
 const config = parse(`
@@ -143,7 +149,7 @@ const json = toJSON('name John\nage 30');
 ## Streaming API
 
 ```typescript
-import { StreamParser, parseStream } from '@tawanjs/soon/stream';
+import { StreamParser, parseStream } from '@tawanorg/soon/stream';
 
 // Event-based streaming
 const parser = new StreamParser();
@@ -194,7 +200,7 @@ const chunks = await parseStream(generateData());
 Full TypeScript support included:
 
 ```typescript
-import { SoonValue, SoonObject, SoonArray, SoonError } from '@tawanjs/soon';
+import { SoonValue, SoonObject, SoonArray, SoonError } from '@tawanorg/soon';
 
 const config: SoonObject = {
   name: 'MyApp',

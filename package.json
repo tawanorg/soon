@@ -1,7 +1,14 @@
 {
-  "name": "@tawanjs/soon",
+  "name": "@tawanorg/soon",
   "version": "0.1.0",
   "description": "SOON - Streamable Object Notation. A streaming-friendly, LLM-optimized serialization format",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tawanorg/soon.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "keywords": [
     "soon",
     "serialization",
